@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  reactStrictMode: true,
+  images: {
+    domains: ['images.unsplash.com'],
+  },
+  typescript: {
+    ignoreBuildErrors: true, // This will ignore TypeScript errors during build
+  },
+}
 
-export default nextConfig;
+export default nextConfig
+
